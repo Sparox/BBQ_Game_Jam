@@ -6,8 +6,13 @@ public class EnemyScript : MonoBehaviour {
 	public float enemyValue = 1f;
 	HUDScript hud;
 
+	public float enemyMove = 0.01f;
+
 	void Update()
 	{
+		float x = transform.position.x;
+
+		transform.position = new Vector3 (x-enemyMove, transform.position.y, transform.position.z);
 	
 	}
 	void OnTriggerEnter2D(Collider2D other)
