@@ -5,11 +5,24 @@ public class GameManagerScript : MonoBehaviour {
 
 
 	HUDScript hud;
+	
+	public GameObject[] obj;
+	
+	public Transform EnemyGround;
+	
+	public float spawnTimeLaunch = 5f;
+	public float spawnTimeRepeat = 0f;
+	public float spawnStart = 20f;
+
 
 
 	// Use this for initialization
 	void Start () {
 		hud = GameObject.Find("Main Camera").GetComponent<HUDScript>();
+
+
+
+		InvokeRepeating("Respawn", spawnTimeLaunch, spawnTimeRepeat);
 	}
 	
 	// Update is called once per frame
@@ -18,6 +31,9 @@ public class GameManagerScript : MonoBehaviour {
 			//Load Menu(game over) scene
 			Application.LoadLevel(1);
 		}
-	
+	}
+
+	void Respawn () {
+		Instantiate(EnemyGround, new Vector3(spawnStart , -5 , -10), new Quaternion(0, 180,0, 0));
 	}
 }

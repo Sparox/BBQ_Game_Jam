@@ -21,19 +21,17 @@ public class EnemyScript : MonoBehaviour {
 		//If collide with Player
 		if (other.tag == "Player") 
 		{
-			hud.IncreaseLife();
-		
-		
-		}
-
-		if (other.tag == "Findus") {
 			//On augmente le score en fonction de la valeur de l'enemy
-
 			hud.IncreaseScore(enemyValue);
 			
 			//On kill l'enemy
 			Destroy(this.gameObject);
+		
+		}
 
+		if (other.tag == "Catapult") 
+		{
+			hud.IncreaseLife();
 		}
 	}
 }
