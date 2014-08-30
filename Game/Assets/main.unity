@@ -137,6 +137,10 @@ Prefab:
       propertyPath: enemyMove
       value: .0500000007
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
   m_RootGameObject: {fileID: 307725312}
@@ -223,7 +227,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fade33b98b1250e4abd27617a1eaf660, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &307725317
 Transform:

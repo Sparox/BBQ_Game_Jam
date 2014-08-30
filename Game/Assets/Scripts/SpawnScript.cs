@@ -24,7 +24,7 @@ public class SpawnScript : MonoBehaviour {
 	void Spawn () {
 		Debug.Log ("Spawn");
 
-		//Instantiate (this, new Vector3(this.transform.position.x + 10 , this.transform.position.y , this.transform.position.z), Quaternion.identity);
+		//Instantiate(this, new Vector3(this.transform.position.x + 10 , this.transform.position.y , this.transform.position.z), new Quaternion(0, 180,0, 0));
 		//Invoke("Spawn", spawn/*Random.Range(spawnMin, spawnMax)*/);
 		
 	}
