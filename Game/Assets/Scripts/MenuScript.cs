@@ -5,7 +5,8 @@ public class MenuScript : MonoBehaviour {
 
 	int score = 0;
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		score = PlayerPrefs.GetInt ("Score");
 	}
 
