@@ -6,12 +6,17 @@ public class LapinCollider : MonoBehaviour {
 	private float frameRabbit = 0;
 	private bool canFrame = false;
 
+	HUDScript hud;
+	public float enemyValue = 1f;
+	public Collider2D enemyToDelete;
+
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log("bonjour");
+
 		//Collisioin avec le chevalier
 		if (other.tag == "Chevalier")
 		{
+
 			canFrame = true;
 			Animator anim = this.GetComponent("Animator") as Animator;
 			anim.SetTrigger("Collision");
@@ -20,8 +25,14 @@ public class LapinCollider : MonoBehaviour {
 			elapse = Time.time;
 
 
+			hud = GameObject.Find("Main Camera").GetComponent<HUDScript>();
+			hud.IncreaseScore(enemyValue);
 
-
+			enemyToDelete = other;
+			Animator enemyAnim = enemyToDelete.GetComponent("Animator") as Animator;
+			enemyAnim.enabled = false;
+			EnemyScript enemyScript = enemyToDelete.GetComponent("EnemyScript") as EnemyScript;
+			enemyScript.enabled = false;
 		}
 	}
 
@@ -34,6 +45,8 @@ public class LapinCollider : MonoBehaviour {
 			{
 				frameRabbit = 0;
 				Destroy(this.gameObject);
+				Destroy(enemyToDelete.gameObject);
+
 			}
 		}
 	}

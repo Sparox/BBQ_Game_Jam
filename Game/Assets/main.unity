@@ -262,7 +262,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 88513ba43ef54b74fbe21ff3e8303b29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -12.9340219
+      value: -7.90919876
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 88513ba43ef54b74fbe21ff3e8303b29, type: 2}
       propertyPath: m_LocalPosition.y
@@ -291,6 +291,26 @@ Prefab:
     - target: {fileID: 400002, guid: 88513ba43ef54b74fbe21ff3e8303b29, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 88513ba43ef54b74fbe21ff3e8303b29, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 88513ba43ef54b74fbe21ff3e8303b29, type: 2}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 88513ba43ef54b74fbe21ff3e8303b29, type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 88513ba43ef54b74fbe21ff3e8303b29, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 88513ba43ef54b74fbe21ff3e8303b29, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88513ba43ef54b74fbe21ff3e8303b29, type: 2}
@@ -416,7 +436,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
       propertyPath: m_LocalPosition.y
@@ -452,7 +472,23 @@ Prefab:
       objectReference: {fileID: 400000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
     - target: {fileID: 11400000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
       propertyPath: spawnTimeLaunch
-      value: 5
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
+      propertyPath: m_Size.y
+      value: 2.20000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
+      propertyPath: m_TagString
+      value: Chevalier
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
@@ -474,7 +510,7 @@ GameObject:
   - 95: {fileID: 1373930833}
   m_Layer: 0
   m_Name: Enemy Ground
-  m_TagString: Untagged
+  m_TagString: Chevalier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -507,10 +543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d122181f72b556841a60ef21d11f3305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: []
-  EnemyGround: {fileID: 400000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
-  spawnTimeLaunch: 5
-  spawnTimeRepeat: 5
 --- !u!114 &1373930835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,7 +567,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 20.4799995, y: 20.4799976}
+  m_Size: {x: 1, y: 2.20000005}
   m_Center: {x: 0, y: 0}
 --- !u!212 &1373930837
 SpriteRenderer:
@@ -567,7 +599,7 @@ Transform:
   m_PrefabInternal: {fileID: 1350068562}
   m_GameObject: {fileID: 1373930832}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
-  m_LocalPosition: {x: 10, y: -5, z: -10}
+  m_LocalPosition: {x: 20, y: -5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -589,7 +621,7 @@ GameObject:
   - 114: {fileID: 1615410779}
   m_Layer: 0
   m_Name: lapinCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -601,7 +633,7 @@ Transform:
   m_PrefabInternal: {fileID: 925815286}
   m_GameObject: {fileID: 1615410777}
   m_LocalRotation: {x: 0, y: .00110751891, z: 0, w: .999999464}
-  m_LocalPosition: {x: -.631709754, y: .921025097, z: .184313104}
+  m_LocalPosition: {x: -.631709754, y: .921025097, z: -10}
   m_LocalScale: {x: .156908646, y: .156908751, z: .448310703}
   m_Children: []
   m_Father: {fileID: 1959025424}
@@ -671,6 +703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76d28280062c5364da5ec14e504baf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyValue: 1
+  enemyToDelete: {fileID: 0}
 --- !u!50 &1615410783
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -714,7 +748,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 3.20000005, y: 5}
-  m_Center: {x: -.600000024, y: 1.13}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1759152879
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,6 +776,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf2965b405b3b046baee9dfa6e97781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obj: []
+  EnemyGround: {fileID: 400000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
+  spawnTimeLaunch: 5
+  spawnTimeRepeat: 5
+  spawnStart: 20
 --- !u!4 &1759152881
 Transform:
   m_ObjectHideFlags: 0
@@ -776,7 +815,7 @@ Transform:
   m_PrefabInternal: {fileID: 925815286}
   m_GameObject: {fileID: 1959025423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.9340219, y: -1.35664129, z: -10}
+  m_LocalPosition: {x: -7.90919876, y: -1.35664129, z: -10}
   m_LocalScale: {x: 2.23059726, y: 2.23059583, z: 2.23059583}
   m_Children:
   - {fileID: 2055346244}
