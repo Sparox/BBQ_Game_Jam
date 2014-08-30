@@ -8,11 +8,13 @@ public class SpawnScript : MonoBehaviour {
 	public Transform EnemyGround;
 
 	public float spawnTimeLaunch = 5f;
-	public float spawnTimeRepeat = 5f;
+	public float spawnTimeRepeat = 0f;
 
 
 	void Start () {
 		InvokeRepeating("Respawn", spawnTimeLaunch, spawnTimeRepeat);
+
+
 	}
 
 	void Update(){
