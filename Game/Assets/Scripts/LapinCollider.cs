@@ -2,29 +2,27 @@
 using System.Collections;
 
 public class LapinCollider : MonoBehaviour {
-
+	private float elapse = 0f;
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		//Collisioin avec le chevalier
 		if (other.tag == "Chevalier")
 		{
-			(this.GetComponent("Animator") as Animator).SetTrigger("Collision");
+			Animator anim = this.GetComponent("Animator") as Animator;
+			anim.SetTrigger("Collision");
 			this.rigidbody2D.isKinematic = true;
-			bool mustDestroy= false;
-			Debug.LogError((this.GetComponent("Animator") as Animator).GetCurrentAnimatorStateInfo(0).IsTag("LapinAction"));
-			while (!mustDestroy  ) 
-			{
-				if ((this.GetComponent("Animator") as Animator).GetCurrentAnimatorStateInfo(0).loop != false) 
-				{	
-					mustDestroy=true;
-					Destroy(this.gameObject);
-				}
+			elapse = Time.time;
 
-			}
-			/*for (int i = 0; i < 20; i++) {
-				Debug.LogError((this.GetComponent("Animator") as Animator).GetCurrentAnimatorStateInfo(0).IsTag("Collision"));
-			}*/
+
+
+
 		}
+	}
+
+	void Update(){
+		if (Time.time -elapse>1) {
+			Destroy(this.gameObject);
+				}
 	}
 }
