@@ -4,28 +4,23 @@ using System.Collections;
 public class SpawnScript : MonoBehaviour {
 
 	public GameObject[] obj;
-	/*public float spawnMin = 1f;
-	public float spawnMax = 2f;
-*/
-	public float spawn = 1f;
 
-	// Use this for initialization
+	public Transform EnemyGround;
+
+	public float spawnTimeLaunch = 5f;
+	public float spawnTimeRepeat = 5f;
+
+
 	void Start () {
-
+		InvokeRepeating("Respawn", spawnTimeLaunch, spawnTimeRepeat);
 	}
 
 	void Update(){
-		if (this.transform.position.x < 0) {
-			Spawn ();
-		}
-	}
-	
-	// Update is called once per frame
-	void Spawn () {
-		Debug.Log ("Spawn");
 
-		//Instantiate(this, new Vector3(this.transform.position.x + 10 , this.transform.position.y , this.transform.position.z), new Quaternion(0, 180,0, 0));
-		//Invoke("Spawn", spawn/*Random.Range(spawnMin, spawnMax)*/);
-		
+	}
+
+
+	void Respawn () {
+		Instantiate(EnemyGround, new Vector3(10 , this.transform.position.y , this.transform.position.z), new Quaternion(0, 180,0, 0));
 	}
 }
