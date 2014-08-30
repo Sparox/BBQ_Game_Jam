@@ -97,7 +97,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: b6e1afe0888e70f458786775a3f2366c, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 120, y: 144, z: 0}
+  m_Position: {x: 612, y: 276, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: LapinAction
@@ -112,7 +112,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 51ed9a44efb6e41429a2dabac174d681, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -204, y: 36, z: 0}
+  m_Position: {x: 396, y: 144, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -138,7 +138,7 @@ StateMachine:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 110270751}
+  m_DefaultState: {fileID: 110214668}
   m_States:
   - {fileID: 110200000}
   - {fileID: 110270751}
@@ -147,12 +147,12 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110200000}
-      second: []
-    data:
       first: {fileID: 110270751}
       second:
       - {fileID: 110146042}
+    data:
+      first: {fileID: 110200000}
+      second: []
     data:
       first: {fileID: 110214668}
       second:
