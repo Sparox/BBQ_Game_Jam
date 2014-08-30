@@ -1,0 +1,114 @@
+[33mcommit 70c05aa09083f216abef988b4156cb2b86b14b4b[m
+Author: Cédric CORNELIS <cedric.cornelis@supinfo.com>
+Date:   Sat Aug 30 17:58:04 2014 +0200
+
+    osef
+
+[33mcommit 40b4c6e15f5eb6dbe42fbaa72625146da9186e87[m
+Author: Cédric CORNELIS <cedric.cornelis@supinfo.com>
+Date:   Sat Aug 30 17:34:57 2014 +0200
+
+    scens
+
+[33mcommit 94407b21aa37bcc27463d681e0997a99e0acc1c8[m
+Author: gamay777 <m.gammaitoni@student.isartdigital.com>
+Date:   Sat Aug 30 17:32:10 2014 +0200
+
+    premier listing des ennemis
+
+[33mcommit c1dd0ffc2766ddbfd914be1358a323d89620ed32[m
+Author: gamay777 <m.gammaitoni@student.isartdigital.com>
+Date:   Sat Aug 30 17:06:03 2014 +0200
+
+    finissions de ce fichier j'y touche plus
+
+[33mcommit 06bb8904252249c0bfcd26186ebdc0fea3973c6b[m
+Author: gamay777 <m.gammaitoni@student.isartdigital.com>
+Date:   Sat Aug 30 16:53:19 2014 +0200
+
+    modification et conclusion de gd docs
+
+[33mcommit f157bb45be69a5c7fe47d5fdbb6df2d7a20c4c4b[m
+Author: gamay777 <m.gammaitoni@student.isartdigital.com>
+Date:   Sat Aug 30 16:12:48 2014 +0200
+
+    gameflow
+
+[33mcommit 7269edca56501ded0139711011c4ed6ec33a38c4[m
+Author: cronostrik <strik69@hotmail.fr>
+Date:   Sat Aug 30 15:53:53 2014 +0200
+
+    j'ai ajouter mon shcerma
+
+[33mcommit 80eac5a7afc0586eed76cba3ba1ea0b2b0bb9b19[m
+Author: gamay777 <m.gammaitoni@student.isartdigital.com>
+Date:   Sat Aug 30 15:43:14 2014 +0200
+
+    new folder docs
+
+[33mcommit 73c579b3405bdf1e29ae0b6966e8cf93b66df840[m
+Author: Cédric CORNELIS <cedric.cornelis@supinfo.com>
+Date:   Sat Aug 30 15:40:34 2014 +0200
+
+    enemyscript
+
+[33mcommit d4024823202eb11194c6c7fc1344901c8ac4c561[m
+Author: Cédric CORNELIS <cedric.cornelis@supinfo.com>
+Date:   Sat Aug 30 15:32:21 2014 +0200
+
+    prefabs
+
+[33mcommit 485c36568e5d41537d68cb1002218414fba89aac[m
+Author: Cédric CORNELIS <cedric.cornelis@supinfo.com>
+Date:   Sat Aug 30 15:28:43 2014 +0200
+
+    prefabs
+
+[33mcommit ecba150408dbc723c241bb6bb4c85eb4c37774cc[m
+Author: Cédric CORNELIS <cedric.cornelis@supinfo.com>
+Date:   Sat Aug 30 13:49:56 2014 +0200
+
+    scene
+
+[33mcommit 3e2f3558ef65b45f2ef08e580ec5abef86af6e06[m
+Merge: ca7ecde 5cabcb3
+Author: Cédric CORNELIS <cedric.cornelis@supinfo.com>
+Date:   Sat Aug 30 10:05:29 2014 +0200
+
+    Merge branch 'master' of https://github.com/Sparox/BBQ_Game_Jam
+
+[33mcommit ca7ecde6de5ce87ed4f27dbaa81de25f21970cb6[m
+Author: Cédric CORNELIS <cedric.cornelis@supinfo.com>
+Date:   Sat Aug 30 10:04:47 2014 +0200
+
+    cube
+
+[33mcommit 5cabcb3564cbec191d556b522f61b9c62b38ad00[m
+Author: Sparox <lp-57@hotmail.fr>
+Date:   Sat Aug 30 10:00:45 2014 +0200
+
+    Update README
+
+[33mcommit 212adad56a277ff3cbf88ac6d0360fc6821da7f7[m
+Author: Sparox <lp-57@hotmail.fr>
+Date:   Sat Aug 30 09:57:35 2014 +0200
+
+    Change project settings
+
+[33mcommit 6f46365cd18f12f3e4ede6a76d953848fa5c97e8[m
+Author: Cédric CORNELIS <cedric.cornelis@supinfo.com>
+Date:   Sat Aug 30 09:52:07 2014 +0200
+
+    unity
+
+[33mcommit d4c2bdfa792981701c0b46596dc469151da7ed4b[m
+Author: Sparox <lp-57@hotmail.fr>
+Date:   Fri Aug 29 16:30:50 2014 +0200
+
+    Update .gitignore
+
+[33mcommit 12cc830d7d1902f4fd8ac6930e109b55637d5d10[m
+Author: Sparox <lp-57@hotmail.fr>
+Date:   Fri Aug 29 16:28:01 2014 +0200
+
+    Initial commit
