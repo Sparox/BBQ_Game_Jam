@@ -3,11 +3,12 @@ using System.Collections;
 
 public class LapinCollider : MonoBehaviour {
 	private float elapse = 0f;
-	public float frameRabbit = 0;
-	public bool canFrame = false;
+	private float frameRabbit = 0;
+	private bool canFrame = false;
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
+		Debug.Log("bonjour");
 		//Collisioin avec le chevalier
 		if (other.tag == "Chevalier")
 		{
@@ -15,6 +16,7 @@ public class LapinCollider : MonoBehaviour {
 			Animator anim = this.GetComponent("Animator") as Animator;
 			anim.SetTrigger("Collision");
 			this.rigidbody2D.isKinematic = true;
+			this.collider2D.enabled = false;
 			elapse = Time.time;
 
 
@@ -24,6 +26,7 @@ public class LapinCollider : MonoBehaviour {
 	}
 
 	void Update(){
+
 		if(canFrame)
 		{
 			frameRabbit ++;
