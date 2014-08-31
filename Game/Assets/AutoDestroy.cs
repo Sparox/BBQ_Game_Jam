@@ -12,7 +12,7 @@ public class AutoDestroy : MonoBehaviour {
 	void Update () {
 		if (!this.transform.renderer.isVisible && !this.rigidbody2D.isKinematic) {
 			Destroy(gameObject);
-			(GameObject.Find("CatapultSystem").GetComponent("RabbitManager") as RabbitManager).mustGenerate = true;
+			//(GameObject.Find("CatapultSystem").GetComponent("RabbitManager") as RabbitManager).mustGenerate = true;
 		}
 	}
 }

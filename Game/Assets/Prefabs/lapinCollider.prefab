@@ -31,8 +31,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: .00110751891, z: 0, w: .999999464}
-  m_LocalPosition: {x: -.631709754, y: .921025097, z: .184313104}
-  m_LocalScale: {x: .300000012, y: .300000012, z: .448310703}
+  m_LocalPosition: {x: .779999971, y: .300000012, z: 8.51695728}
+  m_LocalScale: {x: .300000012, y: .300000012, z: .448310673}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -206,8 +206,7 @@ SpringJoint2D:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 5000000, guid: 1dc39cfa832d9854fb355532a964eff7,
-    type: 2}
+  m_ConnectedRigidBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: .479999989, y: .5}
   m_Distance: 1
