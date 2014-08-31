@@ -17,10 +17,11 @@ public class EnemyScript : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		hud = GameObject.Find("Main Camera").GetComponent<HUDScript>();
+		/*hud = GameObject.Find("Main Camera").GetComponent<HUDScript>();
 		//If collide with Player
 		if (other.tag == "Player") 
 		{
+		
 			//On augmente le score en fonction de la valeur de l'enemy
 			hud.IncreaseScore(enemyValue);
 			
@@ -31,7 +32,8 @@ public class EnemyScript : MonoBehaviour {
 
 		if (other.tag == "Catapult") 
 		{
+
 			hud.IncreaseLife();
-		}
+		}*/
 	}
 }

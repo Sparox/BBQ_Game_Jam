@@ -54,6 +54,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyValue: 10
+  enemyMove: .00999999978
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -65,8 +66,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d122181f72b556841a60ef21d11f3305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: []
-  spawn: 2
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
