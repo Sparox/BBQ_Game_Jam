@@ -17,11 +17,13 @@ public class RabbitManager : MonoBehaviour {
 	void Update () {
 		if((rabbitLaunchedTime != 0f && Time.time - rabbitLaunchedTime > 0.5f) || mustGenerate)
 		{
+		 	
+
 			Transform Rabbit = Instantiate(RabbitPrefab) as Transform;//, new Vector3(-0.6317098f, 0.9210251f, 0.1843131f), Quaternion.identity) as Transform; 
 			(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).rayToMouse = new Ray (this.transform.position, Vector3.zero);
 			(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).leftCatapultToProjectile = new Ray (CatapultLineFront.transform.position, Vector3.zero);
 			Rabbit.parent = this.transform;
-			Rabbit.localPosition = new Vector3(0.78f, 0.3f, 8.5169571f);
+			Rabbit.localPosition = new Vector3(0.78f, 0.3f, 6.787802f);
 			Rabbit.localScale = new Vector3(0.3f,0.3f,0.4483107f);
 			(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).catapultLineFront = CatapultLineFront.GetComponent("LineRenderer") as LineRenderer;
 			(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).catapultLineBack = CatapultLineBack.GetComponent("LineRenderer") as LineRenderer;

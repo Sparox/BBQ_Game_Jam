@@ -35,7 +35,7 @@ public class LapinCollider : MonoBehaviour {
 			enemyScript.enabled = false;
 		}
 
-		if (other.tag == "Ground") 
+		if (other.tag == "Ground" && !this.rigidbody2D.isKinematic) 
 		{
 			canFrame = true;
 			Animator anim = this.GetComponent("Animator") as Animator;

@@ -34,6 +34,7 @@ public class RabbitDragging : MonoBehaviour {
 		maxStretchSqr = maxStretch * maxStretch;
 		circleRadius = 0f;
 
+
 	}
 	
 	// Update is called once per frame
@@ -60,8 +61,8 @@ public class RabbitDragging : MonoBehaviour {
 
 	public void LineRendererSetup()
 	{
-		catapultLineFront.SetPosition (0, catapultLineFront.transform.position -new Vector3(0,-1.5f,1));
-		catapultLineBack.SetPosition (0, catapultLineBack.transform.position - new Vector3(0,-1.5f,0));
+		catapultLineFront.SetPosition (0, catapultLineFront.transform.position -new Vector3(0,-1f,0));
+		catapultLineBack.SetPosition (0, catapultLineBack.transform.position - new Vector3(0,-1f,0));
 
 		catapultLineFront.sortingLayerName = "Foreground";
 		catapultLineBack.sortingLayerName = "Foreground";
@@ -84,6 +85,11 @@ public class RabbitDragging : MonoBehaviour {
 		rigidbody2D.isKinematic = false;
 		clickedOn = false;
 		(GameObject.Find("CatapultSystem").GetComponent("RabbitManager") as RabbitManager).rabbitLaunchedTime = Time.time;
+
+		(GameObject.Find ("Sound1")).audio.mute = false;
+		(GameObject.Find ("Sound1")).audio.Play ();
+		(GameObject.Find ("Sound2")).audio.mute = false;
+		(GameObject.Find ("Sound2")).audio.Play ();
 
 
 		BoxCollider2D b = this.collider2D as BoxCollider2D;
