@@ -60,7 +60,6 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 3.20000005, y: 5}
-<<<<<<< HEAD
   m_Center: {x: -.600000024, y: 1.20000005}
 --- !u!82 &8200000
 AudioSource:
@@ -120,9 +119,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-=======
-  m_Center: {x: -.600000024, y: 1.13}
->>>>>>> 01566d8d808d2bdf8c17142d459aa3f424a7b00b
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -166,11 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76d28280062c5364da5ec14e504baf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   enemyValue: 1
   enemyToDelete: {fileID: 0}
-=======
->>>>>>> 01566d8d808d2bdf8c17142d459aa3f424a7b00b
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
