@@ -24,6 +24,7 @@ public class LapinCollider : MonoBehaviour {
 			this.audio.mute = false;
 			this.audio.Play();
 
+
 			hud = GameObject.Find("Main Camera").GetComponent<HUDScript>();
 			hud.IncreaseScore(enemyValue);
 

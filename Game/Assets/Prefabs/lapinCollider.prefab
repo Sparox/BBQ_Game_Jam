@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: .00110751891, z: 0, w: .999999464}
   m_LocalPosition: {x: -.631709754, y: .921025097, z: .184313104}
-  m_LocalScale: {x: .156908646, y: .156908751, z: .448310703}
+  m_LocalScale: {x: .300000012, y: .300000012, z: .448310703}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -133,7 +133,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
