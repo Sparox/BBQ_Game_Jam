@@ -1,19 +1,18 @@
-Initialize engine version: 4.5.3f3 (fca41a4fabea)
+Initialize engine version: 4.5.2f1 (9abb1b59b47c)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 10.1]
-    Renderer: Intel(R) HD Graphics 3000 (ID=0x116)
-    Vendor:   Intel
-    VRAM:     64 MB
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7500/7600 Series (ID=0x6742)
+    Vendor:   ATI
+    VRAM:     1015 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\TuNi\BBQ_Game_Jam\Game\game_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\TuNi\BBQ_Game_Jam\Game\game_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\TuNi\BBQ_Game_Jam\Game\game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\TuNi\BBQ_Game_Jam\Game\game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.065 seconds
-desktop: 1600x900 40Hz; virtual: 1600x900 at 0,0
+Platform assembly: C:\Users\John\Documents\unity\BBQ_Game_Jam\Game\game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\John\Documents\unity\BBQ_Game_Jam\Game\game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\John\Documents\unity\BBQ_Game_Jam\Game\game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\John\Documents\unity\BBQ_Game_Jam\Game\game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.132 seconds
+desktop: 1920x1080 60Hz; virtual: 3286x1080 at -1366,0
 <RI> Initializing input.
-XInput1_3.dll not found.
 <RI> Input initialized.
 NullReferenceException: Object reference not set to an instance of an object
   at RabbitDragging.Start () [0x00000] in <filename unknown>:0 
@@ -36,12 +35,7 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
+  at RabbitDragging.Start () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
@@ -50,29 +44,6 @@ NullReferenceException
   at UnityEngine.Object.Internal_InstantiateSingle (UnityEngine.Object data, Vector3 pos, Quaternion rot) [0x00000] in <filename unknown>:0 
   at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
   at GameManagerScript.Respawn () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle (UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
-  at UnityEngine.Object.Internal_InstantiateSingle (UnityEngine.Object data, Vector3 pos, Quaternion rot) [0x00000] in <filename unknown>:0 
-  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
-  at GameManagerScript.Respawn () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
@@ -102,36 +73,6 @@ NullReferenceException
   at UnityEngine.Object.Internal_InstantiateSingle (UnityEngine.Object data, Vector3 pos, Quaternion rot) [0x00000] in <filename unknown>:0 
   at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
   at GameManagerScript.Respawn () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Component:InternalGetGameObject ()
-  at UnityEngine.Component.get_gameObject () [0x00000] in <filename unknown>:0 
-  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle (UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
-  at UnityEngine.Object.Internal_InstantiateSingle (UnityEngine.Object data, Vector3 pos, Quaternion rot) [0x00000] in <filename unknown>:0 
-  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
-  at GameManagerScript.Respawn () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
@@ -142,23 +83,23 @@ ArgumentException: The prefab you want to instantiate is null.
  
 (Filename:  Line: -1)
 
-UnloadTime: 1.047716 ms
+UnloadTime: 0.979906 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 65 unused Assets to reduce memory usage. Loaded Objects now: 85.
-Total: 9.916718 ms (FindLiveObjects: 0.008924 ms CreateObjectMapping: 0.010709 ms MarkObjects: 0.103522 ms  DeleteObjects: 9.124237 ms)
+Unloading 67 unused Assets to reduce memory usage. Loaded Objects now: 82.
+Total: 13.890285 ms (FindLiveObjects: 0.015189 ms CreateObjectMapping: 0.008620 ms MarkObjects: 0.126029 ms  DeleteObjects: 12.967851 ms)
 
-UnloadTime: 0.659061 ms
+UnloadTime: 0.292288 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 84.
-Total: 1.649216 ms (FindLiveObjects: 0.014725 ms CreateObjectMapping: 0.021418 ms MarkObjects: 0.225339 ms  DeleteObjects: 0.008031 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 81.
+Total: 0.726206 ms (FindLiveObjects: 0.004105 ms CreateObjectMapping: 0.006568 ms MarkObjects: 0.089082 ms  DeleteObjects: 0.009852 ms)
 
-UnloadTime: 0.508240 ms
+UnloadTime: 0.222911 ms
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 251.
-Total: 1.519813 ms (FindLiveObjects: 0.027665 ms CreateObjectMapping: 0.021864 ms MarkObjects: 0.257913 ms  DeleteObjects: 0.024988 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 254.
+Total: 0.845256 ms (FindLiveObjects: 0.010262 ms CreateObjectMapping: 0.009852 ms MarkObjects: 0.154354 ms  DeleteObjects: 0.016420 ms)
 
 NullReferenceException: Object reference not set to an instance of an object
   at RabbitDragging.Start () [0x00000] in <filename unknown>:0 
@@ -181,7 +122,7 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename:  Line: -1)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
+  at RabbitDragging.Start () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
