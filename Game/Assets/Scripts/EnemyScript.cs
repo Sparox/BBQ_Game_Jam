@@ -33,7 +33,7 @@ public class EnemyScript : MonoBehaviour {
 		if (other.tag == "Catapult") 
 		{
 			Destroy(this.gameObject);
-			hud.IncreaseLife();
+			hud.DecreaseLife();
 		}
 	}
 }

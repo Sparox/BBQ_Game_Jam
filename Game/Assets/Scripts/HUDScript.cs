@@ -35,6 +35,12 @@ public class HUDScript : MonoBehaviour {
 	public void DecreaseLife()
 	{
 		life--;
+
+		if (life == 0) 
+		{
+			Application.LoadLevel (1);
+			PlayerPrefs.SetInt("Score", (int)playerScore);
+		}
 	}
 	                                  
 	void OnDisable()
