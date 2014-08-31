@@ -10,8 +10,8 @@ public class AutoDestroy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!this.renderer.isVisible && !this.rigidbody2D.isKinematic) {
-			Destroy(this.gameObject);
+		if (!this.transform.renderer.isVisible && !this.rigidbody2D.isKinematic) {
+			Destroy(gameObject);
 			(GameObject.Find("CatapultSystem").GetComponent("RabbitManager") as RabbitManager).mustGenerate = true;
 		}
 	}
