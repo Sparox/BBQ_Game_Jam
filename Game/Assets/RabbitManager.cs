@@ -22,7 +22,7 @@ public class RabbitManager : MonoBehaviour {
 			(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).leftCatapultToProjectile = new Ray (CatapultLineFront.transform.position, Vector3.zero);
 			Rabbit.parent = this.transform;
 			Rabbit.localPosition = new Vector3(-0.6317098f, 0.9210251f, 0.1843131f);
-			Rabbit.localScale = new Vector3(0.1569086f,0.1569088f,0.4483107f);
+			Rabbit.localScale = new Vector3(0.3f,0.3f,0.4483107f);
 			(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).catapultLineFront = CatapultLineFront.GetComponent("LineRenderer") as LineRenderer;
 			(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).catapultLineBack = CatapultLineBack.GetComponent("LineRenderer") as LineRenderer;
 			(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).RabbitPrefab = RabbitPrefab;
