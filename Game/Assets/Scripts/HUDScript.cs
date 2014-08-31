@@ -36,8 +36,21 @@ public class HUDScript : MonoBehaviour {
 	{
 		life--;
 
-		if (life == 0) 
+		if (life == 2) 
 		{
+			Destroy(GameObject.Find ("life3"));
+
+		} else if (life == 1) 
+		{
+			Destroy(GameObject.Find ("life2"));
+		//	GameObject.Find ("life2").renderer.enabled = false;
+		}
+
+
+		else if (life == 0) 
+		{
+			Destroy(GameObject.Find ("Hearts"));
+			//GameObject.Find ("life1").renderer.enabled = false;
 			Application.LoadLevel (1);
 			PlayerPrefs.SetInt("Score", (int)playerScore);
 		}
@@ -49,9 +62,9 @@ public class HUDScript : MonoBehaviour {
 	}
 	void OnGUI()
 	{
-		GUI.Label(new Rect(10,10,100,30), "Score : " + (int)playerScore);
+		GUI.Label(new Rect(200,10,100,30), "Score : " + (int)playerScore);
 
-		GUI.Label (new Rect (100, 10, 100, 30), "Life : " + life);
+		GUI.Label (new Rect (250, 10, 100, 30), "Life : " + life);
 
 	}
 }

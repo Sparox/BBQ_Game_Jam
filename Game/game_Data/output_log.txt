@@ -1,0 +1,69 @@
+Initialize engine version: 4.5.3f3 (fca41a4fabea)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics 3000 (ID=0x116)
+    Vendor:   Intel
+    VRAM:     64 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\TuNi\BBQ_Game_Jam\Game\game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\TuNi\BBQ_Game_Jam\Game\game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\TuNi\BBQ_Game_Jam\Game\game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\TuNi\BBQ_Game_Jam\Game\game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.067 seconds
+desktop: 1600x900 40Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found.
+<RI> Input initialized.
+NullReferenceException: Object reference not set to an instance of an object
+  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle (UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+  at UnityEngine.Object.Internal_InstantiateSingle (UnityEngine.Object data, Vector3 pos, Quaternion rot) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at GameManagerScript.Respawn () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at LapinCollider.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle (UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+  at UnityEngine.Object.Internal_InstantiateSingle (UnityEngine.Object data, Vector3 pos, Quaternion rot) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at GameManagerScript.Respawn () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle (UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
+  at UnityEngine.Object.Internal_InstantiateSingle (UnityEngine.Object data, Vector3 pos, Quaternion rot) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at GameManagerScript.Respawn () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 1.812978 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 57 unused Assets to reduce memory usage. Loaded Objects now: 86.
+Total: 3.316281 ms (FindLiveObjects: 0.029896 ms CreateObjectMapping: 0.024541 ms MarkObjects: 0.225339 ms  DeleteObjects: 0.594806 ms)
+
+UnloadTime: 0.627826 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 83.
+Total: 2.485426 ms (FindLiveObjects: 0.015171 ms CreateObjectMapping: 0.021864 ms MarkObjects: 0.233817 ms  DeleteObjects: 0.008924 ms)
+
+UnloadTime: 0.280670 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 206.
+Total: 0.807652 ms (FindLiveObjects: 0.008478 ms CreateObjectMapping: 0.008478 ms MarkObjects: 0.115123 ms  DeleteObjects: 0.003569 ms)
+

@@ -15,10 +15,11 @@ public class GameManagerScript : MonoBehaviour {
 	public float spawnTimeRepeat = 0f;
 	public float spawnStart = 20f;
 
-
+	public Transform Heart;
 
 	// Use this for initialization
 	void Start () {
+
 		hud = GameObject.Find("Main Camera").GetComponent<HUDScript>();
 
 
@@ -27,12 +28,17 @@ public class GameManagerScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (hud.GetLife () == 0) {
+	void Update () 
+	{
+		if (hud.GetLife () == 0) 
+		{
 			//Load Menu(game over) scene
 			Application.LoadLevel(1);
+			Instantiate(Heart, new Vector3(-1.328481f, 4.818217f, 0), new Quaternion(0,0,0,0));
+
 		}
 	}
+
 
 	void Respawn () {
 		Instantiate(EnemyGround, new Vector3(spawnStart , -2.717418f , -10), new Quaternion(0, 0,0, 0));
