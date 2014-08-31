@@ -35,6 +35,6 @@ public class GameManagerScript : MonoBehaviour {
 
 	void Respawn () {
 		Instantiate(EnemyGround, new Vector3(spawnStart , -2.717418f , -10), new Quaternion(0, 0,0, 0));
-		Instantiate (EnemyMidGround, new Vector3 (spawnStart, -2.717418f, -10), new Quaternion (0,0, 0, 0));
+		Instantiate (EnemyMidGround, new Vector3 (spawnStart, -2.064525f, -10), new Quaternion (0,0, 0, 0));
 	}
 }

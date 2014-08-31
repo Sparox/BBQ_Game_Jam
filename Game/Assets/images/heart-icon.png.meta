@@ -1,11 +1,8 @@
 fileFormatVersion: 2
-guid: 653a19eeb7f3c3b4692cfe514cac7395
+guid: 362172b637aadd643803f50e1bf8490c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sentinel
-    21300002: sentinel_0
-    21300004: sentinel_1
-    21300006: sentinel_2
+    21300000: heart-icon
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,13 +26,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 1
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -46,36 +43,6 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: sentinel_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 63
-        width: 371
-        height: 727
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sentinel_1
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 136
-        width: 440
-        height: 726
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: sentinel_2
-      rect:
-        serializedVersion: 2
-        x: 840
-        y: 0
-        width: 365
-        height: 726
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 

@@ -12,9 +12,10 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
+  - 95: {fileID: 9500000}
   m_Layer: 0
   m_Name: Enemy Sky
-  m_TagString: Untagged
+  m_TagString: Chevalier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 200, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 15.2777596, y: 2.57397008, z: -10}
+  m_LocalScale: {x: .411388189, y: .411388308, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -42,6 +43,21 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 5, y: 5}
   m_Center: {x: 0, y: 0}
+--- !u!95 &9500000
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c051ad30dca328748911a3f2244800ef, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,8 +69,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d122181f72b556841a60ef21d11f3305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: []
-  spawn: 3
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -66,7 +80,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70b681ca33d819499250e60b1af7d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyValue: 100
+  enemyValue: 300
+  enemyMove: .0199999996
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -86,8 +101,8 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9d24e97002cd5ec409fb7ad75e4319bf, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300002, guid: 653a19eeb7f3c3b4692cfe514cac7395, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70b681ca33d819499250e60b1af7d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyValue: 1
+  enemyValue: 100
   enemyMove: .0299999993
 --- !u!212 &21200000
 SpriteRenderer:
