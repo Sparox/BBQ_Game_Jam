@@ -38,12 +38,6 @@ public class RabbitDragging : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)) {
-			if(collider2D.bounds.Contains(Input.mousePosition)){
-				spring.enabled = false;
-				clickedOn = true;
-			}
-		}
 		if (clickedOn)
 			Dragging ();
 
