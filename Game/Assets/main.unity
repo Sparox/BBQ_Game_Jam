@@ -656,7 +656,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
       propertyPath: enemyMove
-      value: .00499999989
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyValue: 1
-  enemyMove: .00499999989
+  enemyMove: .100000001
 --- !u!61 &1373930836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -848,7 +848,7 @@ MonoBehaviour:
   obj: []
   EnemyGround: {fileID: 400000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
   spawnTimeLaunch: 1
-  spawnTimeRepeat: 1
+  spawnTimeRepeat: 2
   spawnStart: 20
 --- !u!4 &1759152881
 Transform:
