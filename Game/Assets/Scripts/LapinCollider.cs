@@ -2,13 +2,13 @@
 using System.Collections;
 
 public class LapinCollider : MonoBehaviour {
-	private float elapse = 0f;
 	private float frameRabbit = 0;
 	private bool canFrame = false;
-
+	private bool redimOk = false;
 	HUDScript hud;
 	public float enemyValue = 1f;
 	public Collider2D enemyToDelete;
+
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
@@ -22,7 +22,6 @@ public class LapinCollider : MonoBehaviour {
 			anim.SetTrigger("Collision");
 			this.rigidbody2D.isKinematic = true;
 			this.collider2D.enabled = false;
-			elapse = Time.time;
 
 
 			hud = GameObject.Find("Main Camera").GetComponent<HUDScript>();
@@ -37,7 +36,6 @@ public class LapinCollider : MonoBehaviour {
 	}
 
 	void Update(){
-
 		if(canFrame)
 		{
 			frameRabbit ++;

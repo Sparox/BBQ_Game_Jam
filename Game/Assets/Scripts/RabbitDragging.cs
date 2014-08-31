@@ -74,14 +74,19 @@ public class RabbitDragging : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
+
 		spring.enabled = false;
 		clickedOn = true;
 	}
 
 	void OnMouseUp() {
+
 		spring.enabled = true;
 		rigidbody2D.isKinematic = false;
 		clickedOn = false;
+
+		BoxCollider2D b = this.collider2D as BoxCollider2D;
+		b.size = new Vector3(2.0f, 2.0f, 2.0f);
 
 	}
 
