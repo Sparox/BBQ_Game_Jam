@@ -207,8 +207,6 @@ MonoBehaviour:
   spring: {fileID: 0}
   catapult: {fileID: 0}
   RabbitPrefab: {fileID: 0}
-  lapinMoveX: .0199999996
-  lapinMoveY: .00999999978
 --- !u!212 &346844610
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -640,8 +638,6 @@ MonoBehaviour:
   spring: {fileID: 0}
   catapult: {fileID: 0}
   RabbitPrefab: {fileID: 400000, guid: 5ce28ec953c9cd843abe5102a7b304b7, type: 2}
-  lapinMoveX: .00999999978
-  lapinMoveY: .00999999978
 --- !u!231 &826864906
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -725,6 +721,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!61 &826864911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -840,8 +837,6 @@ MonoBehaviour:
   spring: {fileID: 0}
   catapult: {fileID: 0}
   RabbitPrefab: {fileID: 0}
-  lapinMoveX: .0199999996
-  lapinMoveY: .00999999978
 --- !u!212 &883818719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -966,8 +961,6 @@ MonoBehaviour:
   spring: {fileID: 0}
   catapult: {fileID: 0}
   RabbitPrefab: {fileID: 0}
-  lapinMoveX: .0199999996
-  lapinMoveY: .00999999978
 --- !u!212 &1025037467
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1038,7 +1031,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f6390ec34be2ffe43b9405595911ea4d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3719933e2c430d439294dc61f8e336a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1028682171
 Transform:
@@ -1363,6 +1356,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1373930834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1791,6 +1785,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2046858985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1879,6 +1874,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2062209851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2010,6 +2006,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2119987070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2117,8 +2114,6 @@ MonoBehaviour:
   spring: {fileID: 0}
   catapult: {fileID: 0}
   RabbitPrefab: {fileID: 0}
-  lapinMoveX: .0199999996
-  lapinMoveY: .00999999978
 --- !u!212 &2133228019
 SpriteRenderer:
   m_ObjectHideFlags: 0
