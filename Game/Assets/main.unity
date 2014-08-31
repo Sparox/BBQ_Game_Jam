@@ -149,7 +149,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
 --- !u!82 &489816535
 AudioSource:
   m_ObjectHideFlags: 0
@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e786394e7de06488d8afc8eb3ddc78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxStretch: 7
+  maxStretch: 4
   catapultLineFront: {fileID: 1099592893}
   catapultLineBack: {fileID: 1256619996}
   spring: {fileID: 0}
@@ -500,6 +500,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!61 &826864911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -738,7 +739,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!82 &1202227882
 AudioSource:
   m_ObjectHideFlags: 0
@@ -912,6 +913,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1373930834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1338,6 +1340,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2046858985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1410,7 +1413,7 @@ Transform:
   m_LocalScale: {x: .484255552, y: .484255373, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &2062209851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,6 +1545,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2119987070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1614,7 +1618,7 @@ Transform:
   m_LocalScale: {x: .411388189, y: .411388308, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
 --- !u!1 &2136898839
 GameObject:
   m_ObjectHideFlags: 0
