@@ -8,7 +8,6 @@ public class LapinCollider : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log("bonjour");
 		//Collisioin avec le chevalier
 		if (other.tag == "Chevalier")
 		{
@@ -18,10 +17,6 @@ public class LapinCollider : MonoBehaviour {
 			this.rigidbody2D.isKinematic = true;
 			this.collider2D.enabled = false;
 			elapse = Time.time;
-
-
-
-
 		}
 	}
 

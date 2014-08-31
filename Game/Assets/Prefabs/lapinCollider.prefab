@@ -11,11 +11,13 @@ GameObject:
   - 61: {fileID: 6100000}
   - 95: {fileID: 9500000}
   - 50: {fileID: 5000000}
-  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   - 212: {fileID: 21200000}
+  - 231: {fileID: 23100000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: lapinCollider
-  m_TagString: Untagged
+  m_TagString: Rabbit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,8 +29,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: .00110751891, z: 0, w: .999999464}
-  m_LocalPosition: {x: 4, y: 9, z: -13}
-  m_LocalScale: {x: .349999994, y: .349999994, z: 1}
+  m_LocalPosition: {x: -.631709754, y: .921025097, z: .184313104}
+  m_LocalScale: {x: .156908646, y: .156908751, z: .448310703}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,7 +45,7 @@ Rigidbody2D:
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -57,7 +59,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 3.20000005, y: 5}
-  m_Center: {x: -.600000024, y: 1.20000005}
+  m_Center: {x: -.600000024, y: 1.13}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -72,7 +74,25 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6e786394e7de06488d8afc8eb3ddc78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxStretch: 7
+  catapultLineFront: {fileID: 0}
+  catapultLineBack: {fileID: 0}
+  spring: {fileID: 0}
+  catapult: {fileID: 0}
+  RabbitPrefab: {fileID: 0}
+--- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -83,8 +103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76d28280062c5364da5ec14e504baf05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frameRabbit: 0
-  canFrame: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -107,6 +125,21 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ecb08de5e7dcbcb40a092cdd06e21d94, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!231 &23100000
+SpringJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_CollideConnected: 0
+  m_ConnectedRigidBody: {fileID: 5000000, guid: 1dc39cfa832d9854fb355532a964eff7,
+    type: 2}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: .339732707, y: 1.64474714}
+  m_Distance: 3.5
+  m_DampingRatio: 0
+  m_Frequency: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
