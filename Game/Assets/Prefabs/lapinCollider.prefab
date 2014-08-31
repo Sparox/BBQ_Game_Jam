@@ -133,6 +133,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -182,7 +183,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: ecb08de5e7dcbcb40a092cdd06e21d94, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!231 &23100000
@@ -196,8 +197,8 @@ SpringJoint2D:
   m_ConnectedRigidBody: {fileID: 5000000, guid: 1dc39cfa832d9854fb355532a964eff7,
     type: 2}
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: .339732707, y: 1.64474714}
-  m_Distance: 3.5
+  m_ConnectedAnchor: {x: .479999989, y: .5}
+  m_Distance: 1
   m_DampingRatio: 0
   m_Frequency: 2
 --- !u!1001 &100100000

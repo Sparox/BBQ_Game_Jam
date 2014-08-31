@@ -57,6 +57,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,7 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyValue: 1
-  enemyMove: .0500000007
+  enemyMove: .00499999989
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
