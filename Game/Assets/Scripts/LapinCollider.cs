@@ -21,7 +21,8 @@ public class LapinCollider : MonoBehaviour {
 			anim.SetTrigger("Collision");
 			this.rigidbody2D.isKinematic = true;
 			this.collider2D.enabled = false;
-
+			this.audio.mute = false;
+			this.audio.Play();
 
 			hud = GameObject.Find("Main Camera").GetComponent<HUDScript>();
 			hud.IncreaseScore(enemyValue);

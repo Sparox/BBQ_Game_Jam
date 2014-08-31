@@ -112,10 +112,13 @@ public class RabbitDragging : MonoBehaviour {
 
 	void OnMouseUp() {
 
+		Animator anim = this.GetComponent("Animator") as Animator;
+		anim.SetTrigger("Collision");
 		spring.enabled = true;
 		rigidbody2D.isKinematic = false;
 		clickedOn = false;
 		rabbitLaunchedTime = Time.time;
+
 
 		BoxCollider2D b = this.collider2D as BoxCollider2D;
 		b.size = new Vector3(2.0f, 2.0f, 2.0f);
