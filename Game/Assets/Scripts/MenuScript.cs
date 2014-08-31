@@ -27,7 +27,7 @@ public class MenuScript : MonoBehaviour {
 		GUI.Label (new Rect (Screen.width / 2 - scoreWidth / 2, 50, scoreWidth+150, 150), scoreString);
 		if (GUI.Button (new Rect (Screen.width / 2 - retryWidth / 2, Screen.height/2, retryWidth, 100), retryString)) 
 		{
-			Application.LoadLevel (0);
+			Application.LoadLevel (1);
 		}
 	}
 }

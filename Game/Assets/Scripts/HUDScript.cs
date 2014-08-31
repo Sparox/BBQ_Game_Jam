@@ -51,7 +51,7 @@ public class HUDScript : MonoBehaviour {
 		{
 			Destroy(GameObject.Find ("Hearts"));
 			//GameObject.Find ("life1").renderer.enabled = false;
-			Application.LoadLevel (1);
+			Application.LoadLevel (2);
 			PlayerPrefs.SetInt("Score", (int)playerScore);
 		}
 	}

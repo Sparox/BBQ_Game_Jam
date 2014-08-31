@@ -33,7 +33,7 @@ public class GameManagerScript : MonoBehaviour {
 		if (hud.GetLife () == 0) 
 		{
 			//Load Menu(game over) scene
-			Application.LoadLevel(1);
+			Application.LoadLevel(2);
 			Instantiate(Heart, new Vector3(-1.328481f, 4.818217f, 0), new Quaternion(0,0,0,0));
 
 		}
