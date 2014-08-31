@@ -118,6 +118,61 @@ Prefab:
   m_RootGameObject: {fileID: 1373930832}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &553383018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 553383021}
+  - 61: {fileID: 553383020}
+  - 50: {fileID: 553383019}
+  m_Layer: 0
+  m_Name: Ground
+  m_TagString: Ground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!50 &553383019
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 553383018}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!61 &553383020
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 553383018}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 20, y: .100000001}
+  m_Center: {x: 0, y: 0}
+--- !u!4 &553383021
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 553383018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.00667476654, y: -3.97745037, z: -1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &640651208
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +304,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 826864903}
   m_LocalRotation: {x: 0, y: .00110751891, z: 0, w: .999999464}
-  m_LocalPosition: {x: .779999971, y: .300000012, z: 8.51695728}
+  m_LocalPosition: {x: .78000021, y: .299999952, z: 8.5}
   m_LocalScale: {x: .300000012, y: .300000012, z: .448310673}
   m_Children: []
   m_Father: {fileID: 1418473511}
@@ -355,7 +410,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!61 &826864911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -682,7 +736,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1373930834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -958,7 +1011,6 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2046858985
 MonoBehaviour:
   m_ObjectHideFlags: 0

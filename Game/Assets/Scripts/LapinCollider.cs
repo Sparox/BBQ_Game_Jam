@@ -34,6 +34,17 @@ public class LapinCollider : MonoBehaviour {
 			EnemyScript enemyScript = enemyToDelete.GetComponent("EnemyScript") as EnemyScript;
 			enemyScript.enabled = false;
 		}
+
+		if (other.tag == "Ground") 
+		{
+			Debug.Log("Bonjour");
+			canFrame = true;
+			Animator anim = this.GetComponent("Animator") as Animator;
+			anim.SetTrigger("CollisionSol");
+			this.rigidbody2D.isKinematic = true;
+			this.collider2D.enabled = false;
+
+		}
 	}
 
 	void Update(){
