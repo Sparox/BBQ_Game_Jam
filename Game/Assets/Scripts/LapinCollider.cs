@@ -7,7 +7,7 @@ public class LapinCollider : MonoBehaviour {
 	private bool redimOk = false;
 	HUDScript hud;
 	public float enemyValue = 1f;
-	public Collider2D enemyToDelete;
+	public Collider2D enemyToDelete = new Collider2D();
 
 
 	void OnTriggerEnter2D(Collider2D other)
@@ -37,7 +37,6 @@ public class LapinCollider : MonoBehaviour {
 
 		if (other.tag == "Ground") 
 		{
-			Debug.Log("Bonjour");
 			canFrame = true;
 			Animator anim = this.GetComponent("Animator") as Animator;
 			anim.SetTrigger("CollisionSol");
