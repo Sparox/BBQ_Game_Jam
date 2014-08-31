@@ -972,6 +972,7 @@ MonoBehaviour:
   obj: []
   EnemyGround: {fileID: 400000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
   EnemyMidGround: {fileID: 400000, guid: a0319322c8a8f0141bc125e3d5516a96, type: 2}
+  EnemySky: {fileID: 2119987074}
   spawnTimeLaunch: 1
   spawnTimeRepeat: 5
   spawnStart: 20

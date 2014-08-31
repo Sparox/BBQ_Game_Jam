@@ -10,6 +10,7 @@ public class GameManagerScript : MonoBehaviour {
 	
 	public Transform EnemyGround;
 	public Transform EnemyMidGround;
+	public Transform EnemySky;
 	public float spawnTimeLaunch = 5f;
 	public float spawnTimeRepeat = 0f;
 	public float spawnStart = 20f;
@@ -36,5 +37,6 @@ public class GameManagerScript : MonoBehaviour {
 	void Respawn () {
 		Instantiate(EnemyGround, new Vector3(spawnStart , -2.717418f , -10), new Quaternion(0, 0,0, 0));
 		Instantiate (EnemyMidGround, new Vector3 (spawnStart, -2.064525f, -10), new Quaternion (0,0, 0, 0));
+		Instantiate (EnemySky, new Vector3 (spawnStart, 2.57397f, -10), new Quaternion (0,0, 0, 0));
 	}
 }
