@@ -660,6 +660,10 @@ Prefab:
       propertyPath: m_TagString
       value: Chevalier
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
+      propertyPath: enemyMove
+      value: .25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66ebf2827df52194ab5bd563a4ef5e67, type: 2}
   m_RootGameObject: {fileID: 1373930832}
@@ -726,7 +730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyValue: 1
-  enemyMove: .0500000007
+  enemyMove: .25
 --- !u!61 &1373930836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -952,9 +956,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 2136898840}
   - 50: {fileID: 2136898841}
+  - 61: {fileID: 2136898842}
   m_Layer: 0
   m_Name: Catapult
-  m_TagString: Untagged
+  m_TagString: Catapult
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -989,3 +994,14 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &2136898842
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136898839}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
