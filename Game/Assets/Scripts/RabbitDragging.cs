@@ -26,6 +26,7 @@ public class RabbitDragging : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		spring = GetComponent <SpringJoint2D> ();
+		spring.connectedBody = GameObject.Find("Catapult").rigidbody2D;
 		catapult = spring.connectedBody.transform;
 		LineRendererSetup ();
 		rayToMouse = new Ray (catapult.position, Vector3.zero);
@@ -61,38 +62,9 @@ public class RabbitDragging : MonoBehaviour {
 			//catapultLineBack.enabled = false;
 		}
 
-		if(rabbitLaunchedTime != 0f)
-		{
-			if(Time.time - rabbitLaunchedTime > 3f)
-			{
-				LineRendererSetup();
-				rayToMouse = new Ray (catapult.position, Vector3.zero);
-				leftCatapultToProjectile = new Ray (catapultLineFront.transform.position, Vector3.zero);
-
-				Transform Rabbit = Instantiate(RabbitPrefab) as Transform;//, new Vector3(-0.6317098f, 0.9210251f, 0.1843131f), Quaternion.identity) as Transform; 
-				
-				Rabbit.parent = GameObject.Find("CatapultSystem").transform;
-				Rabbit.localPosition = new Vector3(-0.6317098f, 0.9210251f, 0.1843131f);
-				Rabbit.localScale = new Vector3(0.1569086f,0.1569088f,0.4483107f);
-				(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).catapultLineFront = catapultLineFront;
-				(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).catapultLineBack = catapultLineBack;
-				(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).RabbitPrefab = RabbitPrefab;
-
-				(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).spring = Rabbit.GetComponent <SpringJoint2D> ();
-				(Rabbit.GetComponent("SpringJoint2D") as SpringJoint2D).connectedBody = GameObject.Find("Catapult").rigidbody2D;
-				(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).catapult = (Rabbit.GetComponent("RabbitDragging") as RabbitDragging).spring.connectedBody.transform;
-				LineRendererSetup ();
-				(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).rayToMouse = new Ray ((Rabbit.GetComponent("RabbitDragging") as RabbitDragging).catapult.position, Vector3.zero);
-				(Rabbit.GetComponent("RabbitDragging") as RabbitDragging).leftCatapultToProjectile = new Ray ((Rabbit.GetComponent("RabbitDragging") as RabbitDragging).catapultLineFront.transform.position, Vector3.zero);
-
-
-				rabbitLaunchedTime = 0f;
-			}
-		}
-
 	}
 
-	void LineRendererSetup()
+	public void LineRendererSetup()
 	{
 		catapultLineFront.SetPosition (0, catapultLineFront.transform.position -new Vector3(0,-3,0));
 		catapultLineBack.SetPosition (0, catapultLineBack.transform.position - new Vector3(0,-3,0));
@@ -117,7 +89,7 @@ public class RabbitDragging : MonoBehaviour {
 		spring.enabled = true;
 		rigidbody2D.isKinematic = false;
 		clickedOn = false;
-		rabbitLaunchedTime = Time.time;
+		(GameObject.Find("CatapultSystem").GetComponent("RabbitManager") as RabbitManager).rabbitLaunchedTime = Time.time;
 
 
 		BoxCollider2D b = this.collider2D as BoxCollider2D;
