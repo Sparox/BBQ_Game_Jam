@@ -34,6 +34,7 @@ public class RabbitDragging : MonoBehaviour {
 		maxStretchSqr = maxStretch * maxStretch;
 		circleRadius = 0f;
 
+
 	}
 	
 	// Update is called once per frame
@@ -84,6 +85,11 @@ public class RabbitDragging : MonoBehaviour {
 		rigidbody2D.isKinematic = false;
 		clickedOn = false;
 		(GameObject.Find("CatapultSystem").GetComponent("RabbitManager") as RabbitManager).rabbitLaunchedTime = Time.time;
+
+		(GameObject.Find ("Sound1")).audio.mute = false;
+		(GameObject.Find ("Sound1")).audio.Play ();
+		(GameObject.Find ("Sound2")).audio.mute = false;
+		(GameObject.Find ("Sound2")).audio.Play ();
 
 
 		BoxCollider2D b = this.collider2D as BoxCollider2D;
