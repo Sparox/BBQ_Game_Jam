@@ -208,7 +208,7 @@ SpringJoint2D:
   m_ConnectedRigidBody: {fileID: 2136898841}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: .339732707, y: 1.64474714}
-  m_Distance: 3.5
+  m_Distance: 1
   m_DampingRatio: 0
   m_Frequency: 2
 --- !u!212 &826864907
@@ -279,6 +279,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!61 &826864911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -699,6 +700,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1373930834
 MonoBehaviour:
   m_ObjectHideFlags: 0
