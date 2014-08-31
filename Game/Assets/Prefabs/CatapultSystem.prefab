@@ -17,7 +17,7 @@ GameObject:
   - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: lapinCollider
-  m_TagString: Untagged
+  m_TagString: Rabbit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: .00110751891, z: 0, w: .999999464}
   m_LocalPosition: {x: -.631709754, y: .921025097, z: .184313104}
-  m_LocalScale: {x: .156908646, y: .156908751, z: .448310703}
+  m_LocalScale: {x: .156908646, y: .156908751, z: .448310673}
   m_Children: []
   m_Father: {fileID: 400002}
   m_RootOrder: 1
@@ -309,6 +309,9 @@ MonoBehaviour:
   maxStretch: 7
   catapultLineFront: {fileID: 12000002}
   catapultLineBack: {fileID: 12000000}
+  spring: {fileID: 0}
+  catapult: {fileID: 0}
+  RabbitPrefab: {fileID: 400000, guid: 5ce28ec953c9cd843abe5102a7b304b7, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

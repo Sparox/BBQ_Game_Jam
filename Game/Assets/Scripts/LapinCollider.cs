@@ -12,7 +12,6 @@ public class LapinCollider : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-
 		//Collisioin avec le chevalier
 		if (other.tag == "Chevalier")
 		{
