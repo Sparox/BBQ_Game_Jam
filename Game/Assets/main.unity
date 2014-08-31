@@ -858,6 +858,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .484255373
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a0319322c8a8f0141bc125e3d5516a96, type: 2}
+      propertyPath: m_TagString
+      value: Chevalier
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0319322c8a8f0141bc125e3d5516a96, type: 2}
   m_RootGameObject: {fileID: 2046858983}
@@ -923,7 +927,7 @@ GameObject:
   - 95: {fileID: 2046858984}
   m_Layer: 0
   m_Name: Enemy Mid Sky
-  m_TagString: Untagged
+  m_TagString: Chevalier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
