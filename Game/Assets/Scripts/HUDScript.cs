@@ -62,7 +62,7 @@ public class HUDScript : MonoBehaviour {
 	}
 	void OnGUI()
 	{
-		GUI.Label(new Rect(70,120,100,30), "Score : " + (int)playerScore);
+		//GUI.Label(new Rect(70,120,100,30), "Score : " + (int)playerScore);
 
 		//GUI.Label (new Rect (850, 10, 100, 30), "Life : " + life);
 
