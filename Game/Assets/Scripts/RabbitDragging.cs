@@ -66,7 +66,7 @@ public class RabbitDragging : MonoBehaviour {
 
 	public void LineRendererSetup()
 	{
-		catapultLineFront.SetPosition (0, catapultLineFront.transform.position -new Vector3(0,-1.5f,-1));
+		catapultLineFront.SetPosition (0, catapultLineFront.transform.position -new Vector3(0,-1.5f,1));
 		catapultLineBack.SetPosition (0, catapultLineBack.transform.position - new Vector3(0,-1.5f,0));
 
 		catapultLineFront.sortingLayerName = "Foreground";
