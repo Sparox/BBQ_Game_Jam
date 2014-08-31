@@ -862,6 +862,18 @@ Prefab:
       propertyPath: m_TagString
       value: Chevalier
       objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: a0319322c8a8f0141bc125e3d5516a96, type: 2}
+      propertyPath: m_Size.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: a0319322c8a8f0141bc125e3d5516a96, type: 2}
+      propertyPath: m_Size.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: a0319322c8a8f0141bc125e3d5516a96, type: 2}
+      propertyPath: m_Center.x
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0319322c8a8f0141bc125e3d5516a96, type: 2}
   m_RootGameObject: {fileID: 2046858983}
@@ -983,8 +995,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.27999997, y: 1.27999997}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 4, y: 8}
+  m_Center: {x: 1.5, y: 0}
 --- !u!212 &2046858988
 SpriteRenderer:
   m_ObjectHideFlags: 0
